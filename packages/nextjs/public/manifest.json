@@ -1,5 +1,16 @@
 {
-  name: 'Scaffold-ETH 2 DApp',
-  description: 'A DApp built with Scaffold-ETH',
-  iconPath: 'logo.svg'
+  "name": "Pizza Day Oracle",
+  "short_name": "Pizza Day Oracle",
+  "description": "Predict Bitcoin Pizza Day CLAWD burn volume. Stake CLAWD, win big.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#212638",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ]
 }

@@ -132,6 +132,7 @@ contract ClawdPredictionMarket is Ownable2Step, ReentrancyGuard {
     function resolve(uint256 _winningBucketId) external onlyOwner nonReentrant {
         require(!resolved, "already resolved");
         require(_winningBucketId < buckets.length, "bad bucket");
+        require(buckets[_winningBucketId].totalPooled > 0, "winning bucket empty");
 
         resolved = true;
         winningBucketId = _winningBucketId;
